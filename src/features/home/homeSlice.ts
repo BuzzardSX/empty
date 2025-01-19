@@ -6,4 +6,4 @@ const homeSlice = createSlice({
 	reducers: {}
 });
 
-export default homeSlice.reducer;
+export default homeSlice;
