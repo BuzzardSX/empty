@@ -1,3 +1,5 @@
-const HomeAddUserButton = () => <button>Add user</button>;
+import { Button } from 'antd';
+
+const HomeAddUserButton = () => <Button>Add user</Button>;
 
 export default HomeAddUserButton;
