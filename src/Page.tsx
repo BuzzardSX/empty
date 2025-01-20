@@ -1,9 +1,10 @@
-import { HomeAddUserButton } from '~/features/home';
+import { HomeAddUserButton, HomeAddUserModal } from '~/features/home';
 
 const Page = () => {
 	return (
 		<div>
 			<HomeAddUserButton />
+			<HomeAddUserModal />
 		</div>
 	);
 };
