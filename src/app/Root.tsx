@@ -1,5 +1,5 @@
-import Main from './Main';
+import Page from '../Page';
 
-const Root = () => <Main />;
+const Root = () => <Page />;
 
 export default Root;
