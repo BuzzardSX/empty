@@ -12,10 +12,12 @@ const homeSlice = createSlice({
 		hideUserModal: (state) => {
 			state.userModalOpen = false;
 		}
+	},
+	selectors: {
+		selectUserModalOpen: (state) => state.userModalOpen
 	}
 });
 
-const { showUserModal } = homeSlice.actions;
-
-export { showUserModal };
+export const { showUserModal } = homeSlice.actions;
+export const { selectUserModalOpen } = homeSlice.selectors;
 export default homeSlice;
