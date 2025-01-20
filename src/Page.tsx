@@ -1,3 +1,7 @@
-const Page = () => <div>App content.</div>;
+const Page = () => {
+	return (
+		<div>App content.</div>
+	);
+};
 
 export default Page;
