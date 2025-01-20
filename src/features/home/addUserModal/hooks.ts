@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '~/app';
 import { selectUserModalOpen } from '../homeSlice';
 
-export const useOpen = () => useSelector(selectUserModalOpen);
+export const useOpen = () => useAppSelector(selectUserModalOpen);
