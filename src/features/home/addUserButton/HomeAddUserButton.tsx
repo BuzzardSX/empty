@@ -1,14 +1,11 @@
 import { Button } from 'antd';
-import { useDispatch } from 'react-redux';
-import { showUserModal } from '../homeSlice';
+import { useClickHandler } from './hooks';
 
 const HomeAddUserButton = () => {
-	const dispatch = useDispatch();
+	const clickHandler = useClickHandler();
 
 	return (
-		<Button onClick={() => {
-			dispatch(showUserModal());
-		}}>
+		<Button onClick={clickHandler}>
 			Add user
 		</Button>
 	);
