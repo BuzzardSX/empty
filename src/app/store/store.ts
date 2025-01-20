@@ -7,6 +7,7 @@ const store = configureStore({
 });
 
 type AppStore = typeof store;
+
 type RootState = ReturnType<AppStore['getState']>;
 
 export const useAppSelector = useSelector.withTypes<RootState>();
