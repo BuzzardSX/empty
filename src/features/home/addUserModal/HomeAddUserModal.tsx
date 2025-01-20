@@ -1,8 +1,13 @@
 import { Modal } from 'antd';
+import { useOpen } from './hooks';
 
 const HomeAddUserModal = () => {
+	const open = useOpen();
+
 	return (
-		<Modal>Modal content.</Modal>
+		<Modal open={open}>
+			Modal content.
+		</Modal>
 	);
 };
 
