@@ -15,7 +15,7 @@ const homeSlice = createSlice({
 	}
 });
 
-const { actions } = homeSlice;
+const { showUserModal } = homeSlice.actions;
 
-export const { showUserModal, hideUserModal } = actions;
+export { showUserModal };
 export default homeSlice;
