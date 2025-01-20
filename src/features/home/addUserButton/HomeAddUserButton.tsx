@@ -1,5 +1,12 @@
 import { Button } from 'antd';
+import { useDispatch } from 'react-redux';
 
-const HomeAddUserButton = () => <Button>Add user</Button>;
+const HomeAddUserButton = () => {
+	const dispatch = useDispatch();
+
+	return (
+		<Button>Add user</Button>
+	);
+};
 
 export default HomeAddUserButton;
