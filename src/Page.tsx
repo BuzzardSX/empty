@@ -1,6 +1,10 @@
+import { HomeAddUserButton } from '~/features/home';
+
 const Page = () => {
 	return (
-		<div>App content.</div>
+		<div>
+			<HomeAddUserButton />
+		</div>
 	);
 };
 
