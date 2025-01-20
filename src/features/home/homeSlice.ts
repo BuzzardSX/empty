@@ -5,7 +5,17 @@ const homeSlice = createSlice({
 	initialState: {
 		userModalOpen: false
 	},
-	reducers: {}
+	reducers: {
+		showUserModal: (state) => {
+			state.userModalOpen = true;
+		},
+		hideUserModal: (state) => {
+			state.userModalOpen = false;
+		}
+	}
 });
 
+const { actions } = homeSlice;
+
+export const { showUserModal, hideUserModal } = actions;
 export default homeSlice;
