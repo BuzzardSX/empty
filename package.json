@@ -16,6 +16,9 @@
 	},
 	"devDependencies": {
 		"@ant-design/v5-patch-for-react-19": "1.0.3",
+		"@storybook/addon-essentials": "8.5.0",
+		"@storybook/react": "8.5.0",
+		"@storybook/react-vite": "8.5.0",
 		"@types/node": "22.10.7",
 		"@types/react": "19.0.7",
 		"@types/react-dom": "19.0.3",
