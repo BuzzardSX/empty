@@ -1,4 +1,4 @@
-import { default as HomeAddUserButton } from './addUserButton';
-import { default as HomeAddUserModal } from './addUserModal';
+export { default as HomeAddUserButton } from './addUserButton';
+export { default as HomeAddUserModal } from './addUserModal';
 export * from './homeSlice';
 export { default } from './homeSlice';

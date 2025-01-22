@@ -3,7 +3,7 @@ import { HomeAddUserButton, HomeAddUserModal } from '~/features/home';
 const Page = () => {
 	return (
 		<div>
-			<HomeAddUserButton />
+			<HomeAddUserButton type='primary' />
 			<HomeAddUserModal />
 		</div>
 	);
