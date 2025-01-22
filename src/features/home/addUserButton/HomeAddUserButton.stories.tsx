@@ -7,7 +7,7 @@ const meta: Meta<typeof HomeAddUserButton> = {
 
 export const primary: StoryObj<typeof HomeAddUserButton> = {
 	args: {
-		primary: true
+		type: 'primary'
 	}
 };
 
