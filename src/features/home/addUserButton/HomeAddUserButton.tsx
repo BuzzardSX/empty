@@ -1,11 +1,17 @@
 import { Button } from 'antd';
 import { useClickHandler } from './hooks';
 
-const HomeAddUserButton = () => {
+type HomeAddUserButtonType = 'primary' | 'dashed' | 'link';
+
+interface HomeAddUserButtonProps {
+	type: HomeAddUserButtonType;
+}
+
+const HomeAddUserButton = ({ type }: HomeAddUserButtonProps) => {
 	const clickHandler = useClickHandler();
 
 	return (
-		<Button onClick={clickHandler}>
+		<Button onClick={clickHandler} type={type}>
 			Add user
 		</Button>
 	);
