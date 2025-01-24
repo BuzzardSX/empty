@@ -8,13 +8,16 @@ interface User {
 const emptyApi = createApi({
 	reducerPath: 'emptyApi',
 	baseQuery: fetchBaseQuery({ baseUrl: '' }),
-	endpoints: (builder) => ({
-		getUser: builder.query<User, void>({
+	endpoints: ({ query }) => ({
+		getOperdayAll: query<Array<{ id: number, dateString: string }>, void>({
+			query: () => '/operday/all'
+		}),
+		getUser: query<User, void>({
 			query: () => '/user'
 		})
 	})
 });
 
-export const { middleware, useGetUserQuery } = emptyApi;
+export const { middleware, useGetOperdayAllQuery, useGetUserQuery } = emptyApi;
 
 export default emptyApi;
