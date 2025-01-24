@@ -1,3 +1,3 @@
-export interface OperdayDatePicker {
-	showCanceled: boolean;
+export interface OperdayDatePickerProps {
+	showCanceled?: boolean;
 }
