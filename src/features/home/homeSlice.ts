@@ -20,4 +20,5 @@ const homeSlice = createSlice({
 
 export const { showUserModal } = homeSlice.actions;
 export const { selectUserModalOpen } = homeSlice.selectors;
+
 export default homeSlice;
