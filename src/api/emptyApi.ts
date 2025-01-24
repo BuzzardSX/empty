@@ -15,6 +15,6 @@ const emptyApi = createApi({
 	})
 });
 
-export const { useGetUserQuery } = emptyApi;
+export const { middleware, useGetUserQuery } = emptyApi;
 
 export default emptyApi;

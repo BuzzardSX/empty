@@ -1,9 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useSelector } from 'react-redux';
+import { middleware } from '../../api/emptyApi';
 import rootReducer from './reducer';
 
 const store = configureStore({
-	reducer: rootReducer
+	reducer: rootReducer,
+	middleware: (getDefaultMiddleware) =>
+		getDefaultMiddleware().concat(middleware)
 });
 
 type AppStore = typeof store;
