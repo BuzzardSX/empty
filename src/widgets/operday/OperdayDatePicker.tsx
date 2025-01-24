@@ -5,11 +5,14 @@ const OperdayDatePicker = () => {
 	const { data } = useGetOperdayAllQuery();
 
 	return (
-		<DatePicker disabledDate={(...args) => {
-			console.log(...args);
+		<DatePicker
+			disabledDate={(...args) => {
+				console.log(...args);
 
-			return false;
-		}} />
+				return false;
+			}}
+			showNow={false}
+		/>
 	);
 }
 
