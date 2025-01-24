@@ -1,10 +1,5 @@
 import { http, HttpResponse } from 'msw';
-
-interface Operday {
-	id: number;
-	dateString: string;
-	statusId: number;
-}
+import type { Operday } from '~/entities';
 
 const handlers = [
 	http.get('/user', () => HttpResponse.json({ name: 'Mike', age: 19 })),
