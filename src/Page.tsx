@@ -1,5 +1,5 @@
 import { HomeAddUserButton, HomeAddUserModal } from '~/features/home';
-import { UserDescriptions } from '~/widgets';
+import { UserDescriptions } from '~/widgets/user';
 
 const Page = () => {
 	return (
