@@ -5,9 +5,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"serve": "vite preview",
-		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"serve": "vite preview"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "2.5.0",

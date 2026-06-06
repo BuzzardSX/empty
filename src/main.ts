@@ -3,14 +3,8 @@ import { createElement } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Root } from './app';
 
-async function enableMocking() {
-	const { worker } = await import('./mocks/browser');
-
-	return worker.start();
-}
-
 const app = document.getElementById('app');
 
 const root = createElement(Root);
 
-enableMocking().then(() => createRoot(app!).render(root));
+createRoot(app!).render(root);
