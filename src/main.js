@@ -6,4 +6,4 @@ const app = document.getElementById('app');
 
 const root = createElement(Root);
 
-createRoot(app!).render(root);
+createRoot(app).render(root);
