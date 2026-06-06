@@ -1,8 +1,11 @@
-const Page = () => {
-	return (
+import { Button } from './components';
+
+const Page = () => (
+	<div>
 		<div>
+			<Button />
 		</div>
-	);
-};
+	</div>
+);
 
 export default Page;
