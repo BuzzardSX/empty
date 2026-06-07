@@ -1,7 +1,7 @@
 import Page from '../Page';
 
-const Root = () => (
+const App = () => (
 	<Page />
 );
 
-export default Root;
+export default App;
