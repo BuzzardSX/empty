@@ -15,11 +15,9 @@ const BigListPlayground = () => {
 		setText(e.target.value);
 
 		startTransition(() => {
-			const items = allItems.filter((i) => {
+			setFilteredItems(allItems.filter((i) => {
 				return i.text.toLowerCase().includes(text.toLowerCase());
-			});
-
-			setFilteredItems(items);
+			}));
 		});
 	};
 
@@ -37,7 +35,7 @@ const BigListPlayground = () => {
 				</button>
 			</div>
 			<div>
-				<BigList items={allItems} />
+				<BigList items={filteredItems} />
 			</div>
 		</div>
 	);
