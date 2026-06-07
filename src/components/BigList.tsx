@@ -4,7 +4,7 @@ interface Item {
 }
 
 interface Props {
-	items: Item[]
+	items: Item[];
 }
 
 const BigList = ({ items }: Props) => (
