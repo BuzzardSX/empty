@@ -1,13 +1,5 @@
 import { useState, useTransition } from 'react';
 
-export const Button = () => {
-	const [isPending, startTransition] = useTransition();
-
-	return (
-		<button>Click me</button>
-	);
-};
-
 type Tab = 'home' | 'about';
 
 function TabContainer() {
@@ -24,3 +16,5 @@ function TabContainer() {
 		<div>Tabs</div>
 	);
 }
+
+export default TabContainer;
