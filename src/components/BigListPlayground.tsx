@@ -35,6 +35,9 @@ const BigListPlayground = () => {
 				</button>
 			</div>
 			<div>
+				{isPending ? <mark>Calculating...</mark> : null}
+			</div>
+			<div>
 				<BigList items={filteredItems} />
 			</div>
 		</div>
