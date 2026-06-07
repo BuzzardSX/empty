@@ -5,7 +5,7 @@ const BigListPlayground = () => {
 	const [text, setText] = useState('');
 	const [filteredItems, setFilteredItems] = useState<Item[]>([]);
 
-	const allItems = Array.from({ length: 10_000 }, (v, i) => ({
+	const allItems = Array.from({ length: 10_000 }, (e, i) => ({
 		id: i + 1,
 		text: `Item #${i + 1}`
 	}));
