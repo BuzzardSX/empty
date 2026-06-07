@@ -21,6 +21,6 @@ function TabContainer() {
 	}
 
 	return (
-		<div></div>
+		<div>Tabs</div>
 	);
 }
