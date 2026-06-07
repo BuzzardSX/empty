@@ -1,9 +1,10 @@
-import { type ChangeEventHandler, useState } from 'react';
+import { type ChangeEventHandler, useState, useTransition } from 'react';
 import { default as BigList, type Item } from './BigList';
 
 const BigListPlayground = () => {
 	const [text, setText] = useState('');
 	const [filteredItems, setFilteredItems] = useState<Item[]>([]);
+	const [isPending, startTransition] = useTransition();
 
 	const allItems = Array.from({ length: 10_000 }, (e, i) => ({
 		id: i + 1,
@@ -13,9 +14,13 @@ const BigListPlayground = () => {
 	const inputChangeHandler: ChangeEventHandler<HTMLInputElement> = (e) => {
 		setText(e.target.value);
 
-		setFilteredItems(allItems.filter((i) => {
-			return i.text.toLowerCase().includes(text.toLowerCase());
-		}));
+		startTransition(() => {
+			const items = allItems.filter((i) => {
+				return i.text.toLowerCase().includes(text.toLowerCase());
+			});
+
+			setFilteredItems(items);
+		});
 	};
 
 	return (
