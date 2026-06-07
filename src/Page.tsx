@@ -1,9 +1,9 @@
-import { Button } from './components';
+import { BigListPlayground } from './components';
 
 const Page = () => (
 	<div>
 		<div>
-			<Button />
+			<BigListPlayground />
 		</div>
 	</div>
 );
