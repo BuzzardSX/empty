@@ -1,4 +1,4 @@
-import { useTransition } from 'react';
+import { useState, useTransition } from 'react';
 
 export const Button = () => {
 	const [isPending, startTransition] = useTransition();
@@ -7,3 +7,20 @@ export const Button = () => {
 		<button>Click me</button>
 	);
 };
+
+type Tab = 'home' | 'about';
+
+function TabContainer() {
+	const [isPending, startTransition] = useTransition();
+	const [tab, setTab] = useState<Tab>('about');
+
+	function selectTab(nextTab: Tab) {
+		startTransition(() => {
+			setTab(nextTab);
+		});
+	}
+
+	return (
+		<div></div>
+	);
+}
