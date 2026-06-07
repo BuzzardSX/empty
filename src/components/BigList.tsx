@@ -10,7 +10,9 @@ interface Props {
 const BigList = ({ items }: Props) => (
 	<ul>
 		{items.map((i) => (
-			<li key={i.id}>{i.text}</li>
+			<li key={i.id}>
+				{i.text}
+			</li>
 		))}
 	</ul>
 );
