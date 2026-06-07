@@ -18,6 +18,11 @@ const BigListPlayground = () => {
 			<div>
 				<input value={text} onChange={inputChangeHandler} />
 			</div>
+			<div>
+				<button onClick={() => setText('')}>
+					Clear
+				</button>
+			</div>
 		</div>
 	);
 };
