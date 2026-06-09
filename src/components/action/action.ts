@@ -4,7 +4,8 @@ export interface ActionProps {
 	children: ReactNode;
 	className?: string;
 	disabled?: boolean;
-	method?: () => {};
+	method?: () => void;
+	primary?: boolean;
 }
 
 export const Action = lazy(() => import('./Action'));
