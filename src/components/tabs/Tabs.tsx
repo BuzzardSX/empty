@@ -12,9 +12,7 @@ const Tabs = () => {
 		});
 	}
 
-	return (
-		<div>Tabs</div>
-	);
+	return <div>Tabs</div>;
 }
 
 export default Tabs;
