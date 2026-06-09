@@ -1,8 +1,8 @@
 import { BigListPlayground } from './components';
 import { Action } from './components/action';
-import { Panel } from './components/panel';
+import { Panel, type PanelItem } from './components/panel';
 
-const panelItems = [
+const panelItems: PanelItem[] = [
 	{
 		key: 1,
 		text: 'Act 1'
