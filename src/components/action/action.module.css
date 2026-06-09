@@ -8,6 +8,7 @@
 
 .root {
 	background-color: var(--primary-color);
+	border-color: var(--primary-color);
 	border-radius: var(--btn-border-radius);
 	border-style: var(--btn-border-style);
 	border-width: var(--btn-border-width);
