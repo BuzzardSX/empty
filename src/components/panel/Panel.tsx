@@ -1,10 +1,21 @@
 import { Action } from '~/components/action';
 
-const Panel = () => (
+interface Item {
+	key: string;
+	text: string;
+}
+
+interface Props {
+	items: Item[];
+}
+
+const Panel = (p: Props) => (
 	<div>
-		<Action>Act 1</Action>
-		<Action>Act 2</Action>
-		<Action>Act 3</Action>
+		{p.items.map(({ text, ...i}) => {
+			return (
+				<Action>{text}</Action>
+			)
+		})}
 	</div>
 );
 
