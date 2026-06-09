@@ -11,11 +11,9 @@ interface Props {
 
 const Panel = (p: Props) => (
 	<div>
-		{p.items.map(({ text, ...i}) => {
-			return (
+		{p.items.map(({ text, ...i}) => (
 				<Action>{text}</Action>
-			)
-		})}
+		))}
 	</div>
 );
 
