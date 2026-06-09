@@ -13,4 +13,5 @@
 	border-style: var(--btn-border-style);
 	border-width: var(--btn-border-width);
 	color: #fff;
+	font-size: 16px;
 }
