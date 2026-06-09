@@ -1,9 +1,11 @@
 import type { ActionProps } from './action';
 import style from './action.module.css';
 
-const Action = ({ className, disabled, ...p }: ActionProps) => {
+const Action = ({ className, ...p }: ActionProps) => {
+	const cls = [style.root, className].join(' ');
+
 	return (
-		<button className={`${style.root} ${className}`} {...p} />
+		<button className={cls} {...p} />
 	);
 };
 
