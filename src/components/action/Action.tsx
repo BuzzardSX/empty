@@ -1,8 +1,6 @@
-interface Props {
-	onClick: () => {};
-}
+import { ActionProps } from './action';
 
-const Action = (props: Props) => (
+const Action = (props: ActionProps) => (
 	<button {...props}>Click me</button>
 );
 
