@@ -5,7 +5,9 @@ import style from './panel.module.css';
 const Panel = (p: PanelProps) => (
 	<div>
 		{p.items.map(({ text, key}) => (
-			<Action key={key} className={style.action}>{text}</Action>
+			<Action key={key} className={style.action} method={() => alert(key)}>
+				{text}
+			</Action>
 		))}
 	</div>
 );
