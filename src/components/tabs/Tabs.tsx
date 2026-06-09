@@ -2,7 +2,7 @@ import { useState, useTransition } from 'react';
 
 type Tab = 'home' | 'about';
 
-function TabContainer() {
+const Tabs = () => {
 	const [isPending, startTransition] = useTransition();
 	const [tab, setTab] = useState<Tab>('about');
 
@@ -17,4 +17,4 @@ function TabContainer() {
 	);
 }
 
-export default TabContainer;
+export default Tabs;
