@@ -6,4 +6,3 @@ export interface ActionProps {
 }
 
 export const Action = lazy(() => import('./Action'));
-export const Panel = lazy(() => import('./Panel'));

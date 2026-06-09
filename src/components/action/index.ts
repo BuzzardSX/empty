@@ -1,1 +1,1 @@
-export { default as Action } from './Action';
+export * from './action';
