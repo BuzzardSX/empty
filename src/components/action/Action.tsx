@@ -1,5 +1,5 @@
 import { ActionProps } from './action';
-import style from './action.module.css';
+import style from './Action.module.css';
 
 const Action = (p: ActionProps) => (
 	<button className={style.root} {...p}>Click me</button>
