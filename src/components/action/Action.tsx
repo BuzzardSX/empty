@@ -1,4 +1,4 @@
-import { ActionProps } from './action';
+import type { ActionProps } from './action';
 import style from './action.module.css';
 
 const Action = (p: ActionProps) => (
