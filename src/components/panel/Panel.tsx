@@ -1,7 +1,7 @@
 import { Action } from '~/components/action';
 
 interface Item {
-	key: string;
+	key: string | number;
 	text: string;
 }
 

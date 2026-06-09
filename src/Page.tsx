@@ -5,7 +5,7 @@ import { Panel } from './components/panel';
 const Page = () => (
 	<div>
 		<div>
-			<Panel items={[]} />
+			<Panel items={[{ key: 1, text: 'Act' }]} />
 		</div>
 		<div>
 			<Action>Act it</Action>
