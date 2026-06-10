@@ -1,4 +1,3 @@
-import { BigListPlayground } from './components';
 import { Action } from './components/action';
 import { Panel, type PanelItem } from './components/panel';
 
@@ -21,13 +20,10 @@ const Page = () => {
 	return (
 		<div>
 			<div>
-				<Panel items={panelItems} />
+				{/* <Panel items={panelItems} /> */}
 			</div>
 			<div>
-				<Action>Act it</Action>
-			</div>
-			<div>
-				<BigListPlayground />
+				{/* <Action>Act it</Action> */}
 			</div>
 		</div>
 	);
