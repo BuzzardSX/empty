@@ -20,7 +20,7 @@ const Home = () => {
 	return (
 		<div>
 			<div>
-				{/* <Panel items={panelItems} /> */}
+				<Panel items={panelItems} />
 			</div>
 			<div>
 				{/* <Action>Act it</Action> */}
