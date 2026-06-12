@@ -1,6 +1,6 @@
 import type { PanelProps } from './panel';
 import { Action } from '../action';
-import classes from './pPanel.module.css';
+import classes from './panel.module.css';
 
 const Panel = (p: PanelProps) => (
 	<div>
