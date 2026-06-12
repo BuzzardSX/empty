@@ -1,7 +1,7 @@
 import { createElement } from 'react';
 
 interface Item {
-	key: string;
+	key: string | number;
 }
 
 interface Props {

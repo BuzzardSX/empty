@@ -21,7 +21,7 @@ const Home = () => {
 	return (
 		<div>
 			<div>
-				<Element items={[]} />
+				<Element items={[{ key: 1 }]} />
 			</div>
 			<div>
 				{/* <Panel items={panelItems} /> */}
