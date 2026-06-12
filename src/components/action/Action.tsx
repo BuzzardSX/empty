@@ -1,8 +1,8 @@
 import type { ActionProps } from './action';
-import style from './action.module.css';
+import classes from './action.module.css';
 
 const Action = ({ className, method, ...p }: ActionProps) => {
-	const cls = [style.root, className].join(' ');
+	const cls = [classes.root, className].join(' ');
 
 	const handleClick = () => {
 		method?.();
