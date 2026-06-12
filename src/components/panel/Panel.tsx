@@ -1,11 +1,11 @@
 import type { PanelProps } from './panel';
-import { Action } from '~/components/action';
-import style from './panel.module.css';
+import { Action } from '../action';
+import classes from './pPanel.module.css';
 
 const Panel = (p: PanelProps) => (
 	<div>
 		{p.items.map(({ text, key}) => (
-			<Action key={key} className={style.action} method={() => alert(key)}>
+			<Action key={key} className={classes.action} method={() => alert(key)}>
 				{text}
 			</Action>
 		))}
