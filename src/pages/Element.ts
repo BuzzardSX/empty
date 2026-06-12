@@ -1,6 +1,9 @@
 import { createElement } from 'react';
 
-const Element = () => createElement(
+interface Props {
+}
+
+const Element = (p: Props) => createElement(
 	'div',
 	null,
 	'Element content.'
