@@ -1,11 +1,11 @@
 import { useId } from 'react';
-import Page from '../Page';
+import { Home } from '../pages';
 
 const App = () => {
 	const id = useId();
 	console.log('App id', id);
 
-	return <Page />;
+	return <Home />;
 }
 
 export default App;
