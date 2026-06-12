@@ -1,3 +1,4 @@
+import Element from './Element';
 import { Action } from '../components/action';
 import { Panel, type PanelItem } from '../components/panel';
 
@@ -20,7 +21,10 @@ const Home = () => {
 	return (
 		<div>
 			<div>
-				<Panel items={panelItems} />
+				<Element />
+			</div>
+			<div>
+				{/* <Panel items={panelItems} /> */}
 			</div>
 			<div>
 				{/* <Action>Act it</Action> */}
