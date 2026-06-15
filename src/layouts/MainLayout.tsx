@@ -5,7 +5,14 @@ interface Props {
 }
 
 const MainLayout = (p: Props) => {
-	return <div>{p.children}</div>;
+	return (
+		<div>
+			<div>
+				<a href='/about'>About</a>
+			</div>
+			<div>{p.children}</div>
+		</div>
+	);
 };
 
 export default MainLayout;
