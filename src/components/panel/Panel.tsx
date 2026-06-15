@@ -1,15 +1,33 @@
 import type { PanelProps } from './panel';
 import { Action } from '../action';
-// import classes from './panel.module.css';
+import { Fragment } from 'react';
+import { createPortal } from 'react-dom';
 
 const Panel = (p: PanelProps) => (
-	<div>
-		{p.items.map(({ text, key }) => (
-			<Action key={key} className={''} method={() => alert(key)}>
-				{text}
-			</Action>
-		))}
-	</div>
+	<Fragment>
+		{createPortal(
+			<style>{`
+				.action:not(:first-child) {
+					border-bottom-left-radius: 0;
+					border-left: none;
+					border-top-left-radius: 0;
+				}
+				.action:not(:last-child) {
+					border-bottom-right-radius: 0;
+					border-right: none;
+					border-top-right-radius: 0;
+				}
+			`}</style>,
+			document.head
+		)}
+		<div>
+			{p.items.map(({ text, key }) => (
+				<Action key={key} className={''} method={() => alert(key)}>
+					{text}
+				</Action>
+			))}
+		</div>
+	</Fragment>
 );
 
 export default Panel;
