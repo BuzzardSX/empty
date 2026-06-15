@@ -24,7 +24,7 @@ const Home = () => {
 				<Element items={[{ key: 1 }]} />
 			</div>
 			<div>
-				{/* <Panel items={panelItems} /> */}
+				<Panel items={panelItems} />
 			</div>
 			<div>
 				{/* <Action>Act it</Action> */}

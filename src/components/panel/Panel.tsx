@@ -22,7 +22,7 @@ const Panel = (p: PanelProps) => (
 		)}
 		<div>
 			{p.items.map(({ text, key }) => (
-				<Action key={key} className={''} method={() => alert(key)}>
+				<Action key={key} className='action' method={() => alert(key)}>
 					{text}
 				</Action>
 			))}
