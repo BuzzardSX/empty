@@ -5,13 +5,29 @@ interface Props {
 	children: ReactNode;
 }
 
-const links: string[] = ['/', '/about'];
+interface Link {
+	href: string;
+	text: ReactNode;
+}
+
+const links: Link[] = [
+	{
+		href: '/',
+		text: 'Home'
+	},
+	{
+		href: '/about',
+		text: 'About'
+	}
+];
 
 const MainLayout = (p: Props) => (
 	<div>
 		<div>
 			{links.map((l) => (
-				<Link href={l}>{l}</Link>
+				<Link href={l.href}>
+					{l.text}
+				</Link>
 			))}
 		</div>
 		<div>{p.children}</div>
