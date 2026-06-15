@@ -18,26 +18,22 @@ const Link = (p: LinkProps) => {
 		history.pushState({}, '', p.href);
 	};
 
-	return <a onClick={anchorClickHandler}>{p.children}</a>;
-};
-
-const MainLayout = (p: Props) => {
-	const anchorClickHandler = (e: MouseEvent<HTMLAnchorElement>) => {
-		e.preventDefault();
-
-		history.pushState({}, '', '/about');
-	};
-
 	return (
-		<div>
-			<div>
-				{links.map((l) => (
-					<Link href={l}>{l}</Link>
-				))}
-			</div>
-			<div>{p.children}</div>
-		</div>
+		<a href={p.href} onClick={anchorClickHandler}>
+			{p.children}
+		</a>
 	);
 };
+
+const MainLayout = (p: Props) => (
+	<div>
+		<div>
+			{links.map((l) => (
+				<Link href={l}>{l}</Link>
+			))}
+		</div>
+		<div>{p.children}</div>
+	</div>
+);
 
 export default MainLayout;
