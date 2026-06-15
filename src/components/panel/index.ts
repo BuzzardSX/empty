@@ -1,1 +1,1 @@
-export * from './panelIndex';
+export * from './panel';

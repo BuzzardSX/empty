@@ -1,5 +1,4 @@
-import { createElement } from 'react';
-import type { PanelProps } from './panelIndex';
+import type { PanelProps } from './panel';
 import { Action } from '../action';
 // import classes from './panel.module.css';
 
@@ -11,6 +10,6 @@ const Panel = (p: PanelProps) => (
 			</Action>
 		))}
 	</div>
-)
+);
 
 export default Panel;
