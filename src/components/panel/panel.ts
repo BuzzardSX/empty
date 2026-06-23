@@ -9,4 +9,4 @@ export interface PanelProps {
 	items: PanelItem[];
 }
 
-export const Panel = lazy(() => import('./Panel'));
+export const Panel = lazy(() => import('./PanelComponent'));

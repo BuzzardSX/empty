@@ -1,3 +1,8 @@
-import { lazy } from 'react';
+import { type ReactNode, lazy } from 'react';
 
-export const Link = lazy(() => import('./Link'));
+export interface LinkProps {
+	children: ReactNode;
+	href: string;
+}
+
+export const Link = lazy(() => import('./LinkComponent'));
