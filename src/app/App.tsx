@@ -1,11 +1,16 @@
-import { useId } from 'react';
-import { Home } from '../pages';
+import { MainLayout } from '../layouts';
+import { About, Home } from '../pages';
+import { useState } from 'react';
 
 const App = () => {
-	const id = useId();
-	console.log('App id', id);
+	const [state] = useState<1 | 2>(1);
 
-	return <Home />;
+	return (
+		<MainLayout>
+			{state == 1 ? <Home /> : null}
+			{state == 1 ? <About /> : null}
+		</MainLayout>
+	);
 }
 
 export default App;

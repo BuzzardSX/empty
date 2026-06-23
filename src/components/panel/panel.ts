@@ -1,20 +1,12 @@
-import { createElement } from 'react';
-import type { PanelProps } from './panelIndex';
-import { Action } from '../action';
-// import classes from './panel.module.css';
+import { lazy } from 'react';
 
-const Panel = (p: PanelProps) => createElement(
-	'div',
-	null,
-	p.items.map(({ text, key}) => createElement(
-		Action,
-		{
-			key,
-			// className: classes.action,
-			method: () => alert(key)
-		},
-		text
-	))
-);
+export interface PanelItem {
+	key: string | number;
+	text: string;
+}
 
-export default Panel;
+export interface PanelProps {
+	items: PanelItem[];
+}
+
+export const Panel = lazy(() => import('./Panel'));
