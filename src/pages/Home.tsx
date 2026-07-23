@@ -1,5 +1,4 @@
 import Element from './Element';
-import { Action } from '../components/action';
 import { Panel, type PanelItem } from '../components/panel';
 
 const panelItems: PanelItem[] = [
@@ -35,9 +34,6 @@ const Home = () => {
 			</div>
 			<div>
 				<Panel items={panelItems} />
-			</div>
-			<div>
-				{/* <Action>Act it</Action> */}
 			</div>
 		</div>
 	);

@@ -1,5 +1,5 @@
 import type { MouseEvent } from 'react';
-import { LinkProps } from './link';
+import type { LinkProps } from './link';
 
 const Link = (p: LinkProps) => {
 	const anchorClickHandler = (e: MouseEvent<HTMLAnchorElement>) => {
