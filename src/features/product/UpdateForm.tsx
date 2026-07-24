@@ -7,10 +7,10 @@ const UpdateForm = () => {
 
 	return (
 		<form action={action}>
-			<input type='hidden' />
+			<input type='hidden' name='number' />
 			<div>
 				<label>Артикул</label>
-				<input name='number' type='text' />
+				<input type='text' name='brandNumber' />
 			</div>
 			<div>
 				<button type='submit'>Добавить</button>
