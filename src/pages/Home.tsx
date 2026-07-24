@@ -17,20 +17,10 @@ const panelItems: PanelItem[] = [
 	}
 ];
 
-const Copyable = () => (
-	<div>
-		<span>Text</span>
-		<span>&#128203;</span>
-	</div>
-);
-
 const Home = () => (
 	<div>
 		<div>
 			<UpdateForm />
-		</div>
-		<div>
-			<Copyable />
 		</div>
 		<div>
 			<Element items={[{ key: 1 }]} />
