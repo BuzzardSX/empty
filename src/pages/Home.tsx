@@ -1,5 +1,4 @@
 import Element from './Element';
-import { BrandUpdateForm } from '../components/brandUpdateForm';
 import { Panel, type PanelItem } from '../components/panel';
 import { UpdateForm } from '../features/product';
 
@@ -25,26 +24,21 @@ const Copyable = () => (
 	</div>
 );
 
-const Home = () => {
-	return (
+const Home = () => (
+	<div>
 		<div>
-			<div>
-				<BrandUpdateForm />
-			</div>
-			<div>
-				<UpdateForm />
-			</div>
-			<div>
-				<Copyable />
-			</div>
-			<div>
-				<Element items={[{ key: 1 }]} />
-			</div>
-			<div>
-				<Panel items={panelItems} />
-			</div>
+			<UpdateForm />
 		</div>
-	);
-};
+		<div>
+			<Copyable />
+		</div>
+		<div>
+			<Element items={[{ key: 1 }]} />
+		</div>
+		<div>
+			<Panel items={panelItems} />
+		</div>
+	</div>
+);
 
 export default Home;
