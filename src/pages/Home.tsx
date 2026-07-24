@@ -1,6 +1,7 @@
 import Element from './Element';
 import { BrandUpdateForm } from '../components/brandUpdateForm';
 import { Panel, type PanelItem } from '../components/panel';
+import { UpdateForm } from '../features/product';
 
 const panelItems: PanelItem[] = [
 	{
@@ -29,6 +30,9 @@ const Home = () => {
 		<div>
 			<div>
 				<BrandUpdateForm />
+			</div>
+			<div>
+				<UpdateForm />
 			</div>
 			<div>
 				<Copyable />
