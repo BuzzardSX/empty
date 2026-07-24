@@ -8,7 +8,7 @@ const BrandUpdateForm = () => {
 	return (
 		<form action={action}>
 			<div>
-				<input name='name' type="text" />
+				<input name='name' type='text' />
 			</div>
 			<div>
 				<button type='submit'>Send</button>
