@@ -1,3 +1,3 @@
 import { lazy } from 'react';
 
-export const ProductUpdateForm = lazy(() => import('./UpdateFormComponent'));
+export const UpdateForm = lazy(() => import('./UpdateForm'));
