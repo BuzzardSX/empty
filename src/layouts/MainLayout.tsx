@@ -25,9 +25,9 @@ const MainLayout = (p: Props) => (
 	<div>
 		<div>
 			{links.map((l) => (
-				<Link href={l.href}>
-					{l.text}
-				</Link>
+				// <Link href={l.href}>
+				// 	{l.text}
+				// </Link>
 			))}
 		</div>
 		<div>{p.children}</div>
