@@ -1,5 +1,5 @@
 import type { PanelProps } from './panel';
-import { Action } from '../action';
+// import { Action } from '../action';
 import { Fragment, useId } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -25,9 +25,9 @@ const Panel = (p: PanelProps) => {
 			)}
 			<div>
 				{p.items.map(({ text, key }) => (
-					<Action key={key} className={`${id}action`} method={() => alert(key)}>
-						{text}
-					</Action>
+					// <Action key={key} className={`${id}action`} method={() => alert(key)}>
+					// 	{text}
+					// </Action>
 				))}
 			</div>
 		</Fragment>
